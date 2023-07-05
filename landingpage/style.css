@@ -1,0 +1,492 @@
+/* Base of the website - header, fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=GFS+Didot&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
+
+/* Color & background for each page */
+body {
+    background-color: #D7D2CB;
+    font-family: 'Manrope', sans-serif;
+    color: #151515
+   }
+html {
+    scroll-behavior: smooth;
+}
+
+/* Top Nav for each page besides the landing page*/
+.topnav {
+    display: flex;
+    flex-direction: row;
+    font-size: 3vw;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 80px 0px 80px;
+    flex-wrap: wrap;
+    border-bottom: solid black 8px;
+     
+
+}
+.name {
+    font-size: 6vw;
+    font-weight: 500;
+     
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.links {
+    width: 50%;
+    
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     
+}
+
+
+/* Home page */ 
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+.header {
+    font-size:  5vw;
+    font-weight: 600;
+    text-align: center;
+}
+.subheader {
+    font-size: 3vw;
+    font-weight: 500;
+}
+.regulartext {
+    font-size: 2vw;
+}
+.main-section {
+    display: flex;
+    flex-direction: row;
+    margin: 80px 100px 80px 100px;
+    height: 55vh;
+    justify-content: space-between;
+}
+
+.description {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* CV */
+
+.cv-category {
+    margin-top: 80px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.cv-category-content {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+     
+    font-size: clamp(20px, 2vw, 28px);
+     
+   
+    border-top: 3px solid black;
+   
+  
+}
+
+h2 {
+    font-size: clamp(24, 3vw, 34px);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ 
+.cv-category-content .when {
+    width: 20vw;
+    font-weight: 800;
+    padding: 8px 10px 8px 0px;
+    
+   
+}
+
+.cv-category-content .what {
+    width: 75vw;
+    padding: 8px 10px 8px 10px;
+    display: flex;
+    flex-direction: column;
+     
+}
+.whatcollege {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.college {
+    padding: 0;
+}
+ 
+
+/* Lower Width Answers */
+
+@media screen and (max-width: 1285px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        border-bottom: solid black 8px;
+        margin: 10;
+      
+    }
+    
+    .links {
+        width: 70%;
+
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        justify-content: start;
+        margin: auto;
+        margin-top: 20px;
+         
+  
+        
+        
+    }
+    .header, .subheader {
+        margin-bottom: 25px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 2vw;
+    }
+    .about, .description {
+        width: 100%;
+    }
+}
+
+/* Lower Width for About Me section of home page */
+ 
+@media screen and (max-width: 725px) {
+        .topnav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        border-bottom: solid black 8px;
+        margin: 0;
+       
+         
+         
+        
+    }
+    
+    .links {
+        width: 90%;
+        font-size: 5.5vw;
+
+    }
+    .name {
+        font-size: 12vw;
+    }
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+       
+       
+         
+  
+        
+        
+    }
+    .header, .subheader {
+        margin-bottom: 25px;
+    }
+    .header {
+        font-size: 9vw;
+    }
+    .subheader {
+        font-size: 6vw;
+        font-weight: bold;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .about, .description {
+        width: 100%;
+    }
+    .regulartext {
+        font-size: 5vw;
+    }
+}
+ 
+/* Poems */ 
+
+.menu {
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: row;
+    
+     
+}
+
+.menu a {
+    display: block;
+    
+    text-decoration: none;
+    padding: .7vw;
+    
+    min-width: 17vw;
+    color: black;
+}
+
+.sidebar {
+    height: 100%;
+    width: 10vw;
+    font-size: max(2.5vw, 28px); 
+    margin-top: 1.5vw;
+    padding-top: 3vw;
+    
+    font-weight: bold;
+    position: fixed;
+   
+     
+     
+   
+    }
+
+.spacer {
+    width: 18vw;
+}
+.sidebar div {
+padding: .8vw;
+ 
+display: block;
+}
+
+ 
+
+.poetry {
+     
+     
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    position: sticky;
+     
+    
+}
+
+.poems {
+    width: 100%;
+    height: 100%;
+    margin-top: 13.5vw;
+    letter-spacing: 1px;
+    margin-bottom: 60vh;
+    scroll-margin-top: 13.5vw;
+     
+    
+    
+        
+    
+}
+
+p {
+    font-size: clamp(10px, 2vw, 30px);
+    font-family: Didot;
+}
+
+#home {
+    
+    padding-top: 0;
+    font-size: clamp(28px, 6vw, 76px);
+    font-weight: bold;
+    color: black;
+     
+}
+#Aberdeen {
+    scroll-margin-top:7vw;
+}
+
+/* Lower Width Poems */
+@media screen and (max-width: 930px) {
+    .menu {
+        margin-left: 4vw;
+        display: flex;
+        flex-direction: row;
+       
+         
+    }
+    
+    .menu a {
+        display: block;
+        
+        text-decoration: none;
+        padding: 1vw;
+        font-size: 3vw;
+        min-width: 21vw;
+        color: black;
+    }
+    
+    .sidebar {
+        height: 100%;
+        width: 21vw;
+         
+        margin-top: 1.5vw;
+        padding-top: 3vw;
+        
+        font-weight: bold;
+        position: fixed;
+       
+         
+         
+       
+        }
+    
+    .spacer {
+        width: 22vw;
+     }
+    .sidebar div {
+    padding: .8vw;
+    font-size: 2vw;
+    display: block;
+    }
+    
+    .body-text {
+     
+    font-size: 2vw;
+     
+     
+    font-weight: 450;
+    }
+    
+    .poetry {
+         
+         
+        display: flex;
+        flex-direction: column;
+        padding-left: 5vw;
+        position: sticky;
+         
+        
+    }
+    
+    .poems {
+        width: 100%;
+        height: 100%;
+        margin-top: 13.5vw;
+        letter-spacing: 1px;
+        margin-bottom: 60vh;
+        scroll-margin-top: 13.5vw;
+         
+        
+        
+            
+        
+    }
+    
+    p {
+         
+         
+    }
+    
+    #home {
+        
+        padding-top: 0;
+        font-size: clamp(28px, 6vw, 76px);
+        
+        font-weight: bold;
+        color: black;
+         
+    }
+    #Aberdeen {
+        scroll-margin-top:7vw;
+    }
+    
+}
+
+
+/*Alternate Home Page*/
+
+.wholepage {
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.alt-wrapper {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80vw;
+    height: 50vh;
+  
+    align-items: center;
+    justify-content:center;
+
+}
+
+.alt-name {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 5vw;
+    font-size: 8vw;
+    font-weight: 600;
+    
+}
+.alt-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10vh 0 10vh 0;
+    height: 100%;
+    font-size: 4vw;
+    font-weight: bold;
+   
+}
+
+.alt-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+ 
+img {
+    height: 0;
+    min-height:100%;
+    
+    
+}

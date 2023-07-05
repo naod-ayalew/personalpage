@@ -1,0 +1,125 @@
+body {
+    background-color: #D7D2CB;
+    font-family: 'Manrope', sans-serif;
+    color: #151515
+   }
+ 
+
+.homewholepage {
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.homewrapper {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.homeheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 60%;
+
+}
+.homename {
+    
+     
+    width: 100%;
+    padding-bottom: 5vh;
+    font-size: clamp(85px,8vw, 128px);
+     
+    font-weight: 600;
+    
+}
+.homelinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    width: 100%;
+    font-size: clamp(33px,3vw, 55px);
+    font-weight: 600;
+     
+   
+}
+
+
+ 
+img  {
+    height: 100%;
+    width: auto;
+    max-height: 525px;
+    max-width: 500px;
+    
+    
+}
+image {
+    display: flex;
+    flex: auto;
+}
+ 
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+/* narrow page */
+
+@media screen and (max-width: 1000px) {
+    .homewrapper {
+        display:flex;
+        flex-direction: column;
+         
+        width: 100vw;
+        height: 50vh;
+        justify-content: space-between;
+      
+        align-items: center;
+        justify-content:center;
+    
+    }
+
+    .homelinks {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-between;
+         
+        width : 100%;
+        font-size: clamp(29px, 4vw, 36px);
+        font-weight: bold;
+       
+    }
+    .homename {
+         
+        
+        width: 100%;
+        padding-bottom: 5vh;
+        font-size: min(8vw, 36px)
+        font-weight: 600;
+        align-self: start;
+
+        
+    }
+    .homeheader {
+        justify-content: flex-start;
+        width: 90vw;
+         
+        
+        
+    }
+    .homeimage {
+        position: relative;
+    }
+}
