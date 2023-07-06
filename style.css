@@ -1,3 +1,4 @@
+ 
 /* Base of the website - header, fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=GFS+Didot&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
  
@@ -41,7 +42,8 @@ html {
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 8vw;
     flex-wrap: wrap;
      
 }
@@ -100,10 +102,26 @@ a {
     display: flex;
     flex-wrap: nowrap;
      
-    font-size: clamp(20px, 2vw, 28px);
+    font-size: clamp(20px, 2vw, 24px);
      
    
     border-top: 3px solid black;
+   
+   
+  
+}
+
+.certification {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+     
+    font-size: clamp(20px, 2vw, 24px);
+    padding: 8px 10px 8px 0px;
+     
+   
+ 
+   
    
   
 }
@@ -133,12 +151,15 @@ h2 {
 .whatcollege {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+   
+ 
+     
+    padding: 8px 10px 8px 0px;
+      
 }
 
-.college {
-    padding: 0;
+.rc {
+    width: 80%;
 }
 .title {
     padding-bottom: 1vh;
@@ -149,7 +170,39 @@ h2 {
     width: 80%;
     
 }
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    justify-items:flex-start;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    padding: 0;
+    margin-left: 2vw;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
 
+.cua {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ 
+ 
+@media screen and (max-width: 786px) {
+    .list {
+        display: none;
+    }
+    .rc {
+        display: none;
+    }
+}
 
 /*CV Lower Width */
 @media screen and (max-width: 725px) {
@@ -177,6 +230,15 @@ h2 {
     .jobdescription {
         width: 85vw;
     }
+    .certification {
+        flex-wrap: wrap;
+    }
+    .links {
+        justify-content: center;
+        gap: 8vw;
+    }
+    
+   
 }
 /* Lower Width Answers */
 
