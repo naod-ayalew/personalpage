@@ -128,8 +128,12 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+ 
+}
+
+@media screen and (max-width: 566px) {
     .hero {
         text-align: left;
-        margin-left: 11vw;
+        margin-left: 8vw;
     }
 }
