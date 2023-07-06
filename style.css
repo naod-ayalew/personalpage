@@ -233,10 +233,7 @@ ul {
     .certification {
         flex-wrap: wrap;
     }
-    .links {
-        justify-content: center;
-        gap: 8vw;
-    }
+ 
     
    
 }
@@ -282,6 +279,10 @@ ul {
     }
     .about, .description {
         width: 100%;
+    }
+    .links {
+        justify-content: center;
+        gap: 8vw;
     }
 }
 
