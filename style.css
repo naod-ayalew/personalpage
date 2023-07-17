@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
 
 /* Color & background for each page */
+
+* {
+    
+}
 body {
     background-color: #D7D2CB;
     font-family: 'Manrope', sans-serif;
@@ -49,7 +53,7 @@ html {
 }
 
 
-/* Home page */ 
+
 
 a {
     text-decoration: none;
@@ -399,8 +403,7 @@ display: block;
     display: flex;
     flex-direction: column;
     padding-left: 5vw;
-    position: sticky;
-     
+    
     
 }
 
@@ -411,6 +414,7 @@ display: block;
     letter-spacing: 1px;
     margin-bottom: 60vh;
     scroll-margin-top: 13.5vw;
+    
      
     
     
@@ -431,8 +435,9 @@ p {
     color: black;
      
 }
-#Aberdeen {
+#Aberdeen p {
     scroll-margin-top:7vw;
+    font-size: clamp(10px, 2vw, 24px);
 }
 
 /* Lower Width Poems */
